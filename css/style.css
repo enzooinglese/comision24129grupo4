@@ -25,16 +25,36 @@ header, footer, main {
     background-color:var(--primer-color);
     
 }
+.logo {
+    width: 50px; 
+    height: auto;
+    margin: 20px auto 0 auto; 
+}
 
+.Navbar {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Navbar li {
+    display: inline;
+    margin: 0 10px; 
+    font-family:"Roboto";
+}
+.Navbar li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s; 
+}
+.Navbar li a:hover {
+    color: var(--tercer-color);
+    text-decoration: underline;
+}
 h1{
     font-family: "Pinyon Script", cursive;
     font-weight: 200;
     display: flex;
     justify-content: center;
-}
-a{
-    text-decoration: none;
-}
-i{
-    color: var(--tercer-color);
 }
