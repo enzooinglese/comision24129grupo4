@@ -58,3 +58,33 @@ h1{
     display: flex;
     justify-content: center;
 }
+/* Lugar */
+.contenido-lugar{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 10px;
+    padding: 1em;
+}
+
+.contenido-lugar img{
+    width: 100%;
+    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
+
+.contenido-lugar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+/* .contenido-lugar div p{
+    margin: 1rem;
+} */
+
+.mapa{
+    width: 100%;
+    border: 0;
+    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
