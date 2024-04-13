@@ -14,14 +14,89 @@
 
 body {
     background-image: url(../img/image2\ 1.png);
-    margin:1rem;
-    margin: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-size: cover;
+    
+}
+/* Pagina de incio con boton para entrar al resto de la pagina */
+.inicio{
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/image2\ 1.png);
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    align-content: center;
+    background-size: cover;
+    top: 0;
+}
+.contenedorClaro{
+    background-color: var(--primer-color);
+    margin: 4rem;
+    height: 90vh;
+    align-content: center;
+}
+.nombres{
+    font-size: 120px;
+}
+
+.tituloInicio{
+    font-size: 90px;
+}
+
+.fechaManual{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.btnEntrar{
+    margin: 20px;
+    width: fit-content;
+    height: 50px;
+    padding: 0 5px;
+    border: 5px solid var(--tercer-color);
+    font-size: 120%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.anillo{
+    margin: 10px;
+    width: 45px;
+    height: 50px;
+}
+
+/* Contador */
+
+.contador{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+.numContador{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: var(--cuarto-color);
+    height: 70px;
+    align-content: center;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 15%;
+}
+
+span{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 
+
 header, footer, main {
-    display: grid;
     background-color:var(--primer-color);
     
 }
@@ -32,9 +107,11 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 a{
     text-decoration: none;
 }
+
 i{
     color: var(--tercer-color);
 }
