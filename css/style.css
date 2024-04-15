@@ -62,20 +62,15 @@ h1{
 i{
     color: var(--tercer-color) ;
 }
-/* Lugar */
-.contenido-lugar{
+/* general contenido lugar y regalos */
+.contenido {
     display: grid;
     grid-template-columns: repeat(2,50%);
     gap: 10px;
     padding: 1em;
 }
 
-.contenido-lugar img{
-    width: 100%;
-    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
-}
-
-.contenido-lugar div {
+.contenido div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,9 +79,20 @@ i{
     font-size: 20px;
 }
 
+/* Lugar */
+
+.contenido-lugar img{
+    width: 100%;
+    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
 
 .mapa{
     width: 100%;
     border: 0;
     box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
+
+/* Regalos */
+.contenido-regalos img{
+    
 }
