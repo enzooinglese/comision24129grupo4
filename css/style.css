@@ -102,7 +102,10 @@ header, footer, main {
     background-color:var(--primer-color);
     
 }
+
+
 /*Navbar*/
+
 .logo {
     width: 20px; 
     height: auto;
@@ -137,7 +140,43 @@ h1{
     justify-content: center;
 }
 
-/*Galeria*/
+/* Lugar */
+
+i{
+    color: var(--tercer-color) ;
+}
+/* general contenido lugar y regalos */
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 10px;
+    padding: 1em;
+}
+
+.contenido div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-size: 20px;
+}
+
+/* Lugar */
+
+.contenido-lugar img{
+    width: 100%;
+    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
+
+.mapa{
+    width: 100%;
+    border: 0;
+    box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
+}
+
+
+/* Galeria */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -152,7 +191,8 @@ h1{
     width: 100%;
     height: auto;
 }
-<<<<<<< HEAD
+
+/* HEAD */
 
 a{
     text-decoration: none;
@@ -161,5 +201,3 @@ a{
 i{
     color: var(--tercer-color);
 }
-=======
->>>>>>> 4d8cb6a46b858b5a54e514720e609b974a4d309c
