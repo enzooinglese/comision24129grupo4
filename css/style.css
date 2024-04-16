@@ -134,10 +134,12 @@ header, footer, main {
     text-decoration: underline;
 }
 h1{
+    margin-bottom: 1rem;
     font-family: "Pinyon Script", cursive;
     font-weight: 200;
     display: flex;
     justify-content: center;
+    font-size: 35px;
 }
 
 /* Lugar */
@@ -181,15 +183,19 @@ i{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 10px;
+    margin-bottom: 1rem;
 }
 
-.grid-item {
-    overflow: hidden;
-}
 
 .grid-item img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 6px 6px 1px rgb(146, 144, 144);
+    border-radius: 8px;
+}
+.grid-item:hover img {
+    transform: scale(1.2); 
 }
 
 /* HEAD */
