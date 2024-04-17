@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <form action="" id="">
+        <div class="cuadro textocentrado ">
+            <h2>CONFIRMACIÓN DE ASISTENCIA AL EVENTO</h2>
+            <div class="noscasamos">
+                <p>¡NOS CASAMOS! y nos encantaría compartir ese día con ustedes. </p>
+                <p>Están cordialmente invitados a nuestra boda</p>
+                <h6>A continuación, te pediremos que completes el formulario para confirmar tu asistencia.</h6>
+            </div>
+        </div>
+        
+        <div class="cuadro">
+            <h4>Nombre y apellido</h4>
+            <div class="nombreyapellido">
+                <input type="text" class="nombre" placeholder="Nombre y apellido:" value="" name="nombre" id="nombre" aria-label="First name">
+            </div>
+        </div>
+       
+        <div class="cuadro">
+            <h4>Podrás asistir a nuestro casamiento?</h4>
+            <div class="asistencia">
+                <div class="form-asistencia">
+                    <input type="radio" id="" name="input-radio" value="asiste">
+                    <label for="">Si, allí estaré</label>
+                </div>
+                <div class="form-asistencia">
+                    <input type="radio" id="" name="input-radio" value="no asiste">
+                    <label for="">No puedo ir, lo siento.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="cuadro">
+            <h4>Tu Mail</h4>
+            <h5>Si deseas que compartamos las fotos de nuestra fiesta, dejanos tu email </h5>
+            <div class="mail">
+                <input type="email" class="form-mail" placeholder="nombre@ejemplo.com" value="" name="mail" id="mail" aria-describedby="emailHelp">
+            </div>
+        </div>
+
+        <div class="cuadro">
+            <h4>Vas acompañado/a?</h4>
+            <h5>Indicar la cantidad de acompañantes que asistirán a la boda</h5>   
+            <div class="invitados">  
+                <input type="number" class="form-invitados" placeholder="" value="" name="cantidadmayores" id="cantidadmayores" aria-label="cant"> 
+                <label>Mayores</label>       
+            </div>
+            <div class="invitados">
+                <input type="number" class="form-invitados" placeholder="" value="" name="cantidadmenores" id="cantidadmenores" aria-label="cant">
+                <label>Niños</label><span class="texto-small"> (menores a 12 años)</span>
+            </div>
+        </div>
+        
+        <div class="cuadro">
+            <h4>Tenés algun tipo de restricción alimentaria?</h4>  
+            <div class="alimentos">
+                <label for="" class="">Tipo de alimentación: </label>
+                <select class="form-alimentos" name="alimentos" id="alimentos" aria-label="Default select example">
+                    <option selected>-Seleccione-</option>
+                    <option value="0">0-No tengo restricción alimentaria</option>
+                    <option value="1">1-Vegana</option>
+                    <option value="2">2-Vegetariana</option>
+                    <option value="3">3-Sin lácteos</option>
+                    <option value="4">2-Sin gluten ni trigo</option> 
+                </select>
+                <br><br>
+                <label for="" class=""></label>
+                <textarea class="observ-alimentos" id="" placeholder="Si tenés algún otro tipo de restricción/dieta alimentaria, dejanos tu comentario..."></textarea>      
+            </div> 
+        </div>
+        
+        <div class="cuadro">
+            <h4>Que música te gustaría escuchar o bailar?</h4>
+            <div class="musica">
+                <input type="checkbox" value="" name="" id="">
+                <label for="">0-Queda a criterio de los novios</label>
+                <br>
+                <input type="checkbox" value="" name="" id="">
+                <label for="">1-Cumbia</label> 
+                <br>
+                <input type="checkbox" value="" name="" id="">
+                <label for="">2-Reggaeton</label>
+                <br>
+                <input type="checkbox" value="" name="" id="">
+                <label  for="">3-rock</label>
+                <br>
+                <input type="checkbox" value="" name="" id="">
+                <label  for="">4-Tango</label>
+                <br>
+                <input type="checkbox" value="" name="" id="">
+                <label for="">5-Folklore</label>  
+                <br><br>
+                
+                <textarea class="observ-musica" id="" placeholder="Si te gusta otro tipo de música, dejanos tu comentario..."></textarea>
+            </div>
+            
+        </div>
+
+        <div class="cuadrobtn">
+            <div>
+                <button type="button" class="formbtn" id="btnBorrar">Eliminar</button>
+            </div>
+            <div>
+                <button type="button" class="formbtn" id="btnModificar">Modificar</button>
+            </div>
+            <div>
+                <button type="button" class="formbtn" id="btnResumen">Confirmar</button>
+            </div>
+        </div>
+        
+        <a href="../index.html" class="menuprincipal textocentrado ">Regresar al menú principal</a>
+        
+    </form>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
