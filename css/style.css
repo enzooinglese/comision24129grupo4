@@ -115,9 +115,18 @@ header, footer, main {
 .Navbar {
     list-style-type: none;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #FAFAE9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
+    
+    
+
 
 .Navbar li {
     display: inline;
@@ -133,6 +142,10 @@ header, footer, main {
     color: var(--tercer-color);
     text-decoration: underline;
 }
+main {
+    padding-top: 60px; 
+    margin-top: 20px; 
+    scroll-behavior: smooth;}
 h1{
     margin-bottom: 1rem;
     font-family: "Pinyon Script", cursive;
