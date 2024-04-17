@@ -207,3 +207,160 @@ a{
 i{
     color: var(--tercer-color);
 }
+
+/*PROPIEDADES DEL FORMULARIO*/
+form {
+    display:flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 10%;
+    gap: 1em 0;
+
+    .cuadro {
+        margin: 0% 15%;
+        padding: 0;
+        background-color: azure;
+        border-color: rgb(170, 45, 114);
+        border-style: groove solid ridge solid;
+        border-width: 1em 0.3em 0.2em 0.3em;
+        border-radius: 0.5em 0.75em 0 0;
+
+        h5 {
+            margin: 2% 0 5% 2%;
+            font-style: oblique;
+            color: rgb(61, 61, 61);
+        }
+        h4 {
+            padding: 2% 0 2% 5%;
+            background-color: #ada2c2;
+            border-bottom-style: solid;
+            border-color: grey;
+        }
+        h2{
+            background: linear-gradient(rgb(231, 147, 231), rgb(137, 137, 212));
+            padding: 5% 0;
+            border-bottom-style: ridge;
+            border-color: grey;
+        } 
+    }   
+        
+    .noscasamos{
+        background: linear-gradient(rgb(231, 201, 231), rgb(151, 186, 197));
+        padding: 5% 0;
+        font-size: x-large;
+    
+        & p{
+            margin: 2% 0;
+            font-weight: 400;
+        }
+        & h6{
+            color:rgb(192, 11, 35);
+             margin-top: 10%;
+        }
+    }
+    
+    .nombreyapellido {
+        margin: 2em 0;
+        padding: 0 10%;
+
+        & .nombre {
+            margin: 0;
+            padding: 2% 40% 2% 3%;
+        }
+    }
+
+    .asistencia {
+        margin: 2em 0;
+        padding: 0 10%;
+
+        & .form-asistencia{
+            margin: 3% 0;
+        }
+    }
+
+    .mail {
+        margin: 2em 0;
+        padding: 0 10%;
+
+        & .form-mail {
+            margin: 0 5% 0 0;
+            padding: 2% 40% 2% 3%;
+        }
+    }
+
+    .invitados {
+        margin: 2em 0;
+        padding: 0 10%;
+        
+        & .form-invitados{
+            width: 25%;
+            margin: 0 5% 0 0;
+            padding: 2% 0% 2% 3%;
+        }
+    }
+    
+    .alimentos{
+        margin: 2em 0;
+        padding: 0 10%;
+
+        .form-alimentos {
+            width: 25%;
+            margin: 0 5% 0 0;
+            padding: 2% 60% 2% 3%;
+        }
+        .observ-alimentos{
+            width: 100%;
+        }
+    }
+    .musica{
+        margin: 2em 0;
+        padding: 0 10%;
+
+        .observ-musica{
+            width: 100%;
+        }
+    }
+
+    .textocentrado {
+        text-align: center;
+    }
+
+    .texto-small{
+        font-size: small;
+    }
+
+
+    /*PROPIEDADES DE BOTONES*/
+
+    .cuadrobtn {
+        width: 100%;
+        margin: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .formbtn {
+        margin: 0.25em 0.75em;
+        padding: 0 2em ;
+        background-color: var(--tercer-color);
+        font-size: medium;
+        font-weight: 600;
+        border-color: #aa1b1d;
+        border-radius: 0.5em;
+        height: 3.5em;
+    }
+
+    .formbtn:hover {
+        background-color: rgb(158, 36, 52);
+        cursor: pointer;
+    }  
+
+    .menuprincipal{
+        width: 100%;
+        margin: 2em 0;
+        font-weight: 400;
+        color:#aa1b1d;
+    }
+}
