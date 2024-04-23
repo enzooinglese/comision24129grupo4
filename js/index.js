@@ -34,13 +34,14 @@ contadorFecha()
 
 setInterval(contadorFecha, 1000)
 
-// eliminar section de inicio
+// comienza musica
 
-const $inicio = document.querySelector("#inicio")
 
-const btnComenzar = document.getElementById("btnEntrar")
+function audioAuto(){
+    const audio = new Audio('./music/perfect.mp3')
+    audio.volume = 0.5;
+    audio.play();
+}
 
-btnComenzar.addEventListener("click", () => {
-    $inicio.remove()
-})
+audioAuto()
 
