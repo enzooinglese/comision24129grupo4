@@ -109,36 +109,41 @@ header, footer, main {
 .logo {
     width: 20px; 
     height: auto;
-    margin: 20px auto 0 auto; 
+    margin: 10px;
 }
 
-.Navbar {
+.navbar {
     list-style-type: none;
     text-align: center;
-    margin: 0;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #FAFAE9;
     position: fixed; 
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Navbar li {
+.navbar li {
     display: inline;
-    margin: 0 10px; 
-    font-family:"Roboto";
+    margin:  1px 15px;
+    font-family: "Roboto";
 }
-.Navbar li a {
+
+.navbar li a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s; 
 }
-.Navbar li a:hover {
+
+.navbar li a:hover {
     color: var(--tercer-color);
     text-decoration: underline;
 }
+
 
 main {
     padding-top: 60px; 
