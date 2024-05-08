@@ -99,7 +99,7 @@
         <section id="asistencia">
             <h1>Asistencia</h1>
             <div class="contenido-asistencia">   
-                <form action="" id="">
+                <form action="" id="formulario">
                     <div>
                         <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido" value="" name="nombre y apellido" id="nombre" aria-label="name">
                     </div>
@@ -120,19 +120,11 @@
                         <input type="email" class="cuadro-form texto-form" placeholder="Mail: nombre@ejemplo.com" value="" name="mail" id="mail" aria-describedby="emailHelp">
                     </div>
                     <div>
-                        <div class="cuadro-form">
-                            <label for="asistencia">¿Vas acompañado/a?</label>
+                        <div class="">
+                            <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido del invitado" value="" name="invitado" id="invitado" aria-describedby="">
                         </div>
                         <div class="cuadrobtn-invitados">
-                            <button type="button" class="formbtn" id="btninvitados">Agregar Invitados</button>
-                        </div>
-                        <div class="opciones-form">
-                            <!--<input type="radio" id="presente" name="input-radio" value="presente">-->
-                            <!--<label for="asistencia">Si</label>-->
-                        </div>
-                        <div class="opciones-form">
-                            <!--<input type="radio" id="ausente" name="input-radio" value="ausente">-->
-                            <!--<label for="asistencia">No</label>-->
+                            <button type="button" class="formbtn" id="btninvitados">Agregar Invitado</button>
                         </div>
                     </div>  
                     <div>
@@ -156,13 +148,13 @@
                     </div>
                     <div class="cuadrobtn-form">
                         <div>
-                            <button type="button" class="formbtn" id="btnBorrar">ELIMINAR</button>
+                            <button type="reset" class="formbtn" id="btnBorrar">ELIMINAR</button>
                         </div>
                         <div>
                             <button type="button" class="formbtn" id="btnModificar">MODIFICAR</button>
                         </div>
                         <div>
-                            <button type="button" class="formbtn" id="btnResumen">CONFIRMAR</button>
+                            <button type="submit" class="formbtn" id="btnResumen">CONFIRMAR</button>
                         </div>
                     </div>
                 </form>
@@ -176,21 +168,23 @@
         <section id="musica">
             <h1>¿Qué canción te gustaría escuchar?</h1>
             <div class="contenido-musica">
-                <div class="cuadro-musica">
-                    <label for="">Completá debajo la canción a compartir</label>
-                </div>
-                <div class="cuadro-musica">
-                    <textarea id="prefAlim-cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
-                </div>
-            
-                <div class="cuadrobtn-musica">
-                    <div>
-                        <button type="button" class="musicabtn" id="btnBorrar">ELIMINAR</button>
+                <form action="" id="formulario">
+                    <div class="cuadro-musica">
+                        <label for="">Completá debajo la canción a compartir</label>
                     </div>
-                    <div>
-                        <button type="button" class="musicabtn" id="btnResumen">CONFIRMAR</button>
-                    </div>  
-                </div>
+                    <div class="cuadro-musica">
+                        <textarea id="prefAlim-cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
+                    </div>
+            
+                    <div class="cuadrobtn-musica">
+                        <div>
+                            <button type="reset" class="musicabtn" id="btnBorrar">ELIMINAR</button>
+                        </div>
+                        <div>
+                            <button type="submit" class="musicabtn" id="btnResumen">CONFIRMAR</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
 
