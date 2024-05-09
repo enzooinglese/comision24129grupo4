@@ -9,6 +9,13 @@
     --segundo-color: #ffff8c;
     --tercer-color: #C06C6E;
     --cuarto-color: #FFE3E0;     
+
+    --form-cuadro:  rgb(218, 218, 218);
+    --texto-formulario: dimgrey;
+    --texto-cargaInvitado: black;
+    --texto-btn: rgb(93, 93, 200);
+    --cuadro-btn: rgb(190, 190, 190);
+    --cuadro-hover: rgb(216, 210, 210);
 }
 
 
@@ -252,159 +259,192 @@ i{
     color: var(--tercer-color);
 }
 
+
 /*PROPIEDADES DEL FORMULARIO*/
-form {
-    display:flex;
-    flex-direction: column;
-    width: 75%;
-    margin: 0 10%;
-    gap: 1em 0;
+.contenido-asistencia {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    padding: 1em;  
+         
+    form{
+        margin: 0 15%;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        font-family: "Roboto", sans-serif; 
 
-    .cuadro {
-        margin: 0% 15%;
-        padding: 0;
-        background-color: azure;
-        border-color: rgb(170, 45, 114);
-        border-style: groove solid ridge solid;
-        border-width: 1em 0.3em 0.2em 0.3em;
-        border-radius: 0.5em 0.75em 0 0;
-
-        h5 {
-            margin: 2% 0 5% 2%;
-            font-style: oblique;
-            color: rgb(61, 61, 61);
-        }
-        h4 {
-            padding: 2% 0 2% 5%;
-            background-color: #ada2c2;
-            border-bottom-style: solid;
-            border-color: grey;
-        }
-        h2{
-            background: linear-gradient(rgb(231, 147, 231), rgb(137, 137, 212));
-            padding: 5% 0;
-            border-bottom-style: ridge;
-            border-color: grey;
-        } 
-    }   
-        
-    .noscasamos{
-        background: linear-gradient(rgb(231, 201, 231), rgb(151, 186, 197));
-        padding: 5% 0;
-        font-size: x-large;
-    
-        & p{
-            margin: 2% 0;
+        .cuadro-form{  
+            width: 100%;
+            background-color: var(--form-cuadro);
+            border-radius: 0.8em;
+            border-color: transparent;
+            margin-top: 0.7em;
+            padding: 0.3em 0 0.3em 0.75em;
+            font-size: 1.2em;
             font-weight: 400;
         }
-        & h6{
-            color:rgb(192, 11, 35);
-             margin-top: 10%;
+        .opciones-form{
+            width: 50%;
+            margin-top: 0.5em;
+            margin-left: 50%;
+            background-color: var(--form-cuadro);
+            border-radius: 0.8em;
+            border-color: transparent;
+            padding: 0 0 0 0.75em;
+            }
+        .texto-form{
+            color: var(--texto-cargaInvitado);
+            font-family: "Roboto", sans-serif;
+        }
+        ::placeholder, label{
+            color: var(--texto-formulario);
+            }
+        select, option{
+            color: var(--texto-formulario);
+            font-size: 1em 
+        }
+        textarea{
+            width:50%;
+            height: 1.5em;
+            margin-left: 50%;
+            background-color: var(--form-cuadro);
+            border-radius: 0.8em;
+            border-color: transparent;
+            margin-top: 0.5em;
+            padding: 0 0 0 0.75em;
+            align-content: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.95em;   
         }
     }
-    
-    .nombreyapellido {
-        margin: 2em 0;
-        padding: 0 10%;
 
-        & .nombre {
-            margin: 0;
-            padding: 2% 40% 2% 3%;
-        }
-    }
-
-    .asistencia {
-        margin: 2em 0;
-        padding: 0 10%;
-
-        & .form-asistencia{
-            margin: 3% 0;
-        }
-    }
-
-    .mail {
-        margin: 2em 0;
-        padding: 0 10%;
-
-        & .form-mail {
-            margin: 0 5% 0 0;
-            padding: 2% 40% 2% 3%;
-        }
-    }
-
-    .invitados {
-        margin: 2em 0;
-        padding: 0 10%;
+    .form-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
         
-        & .form-invitados{
-            width: 25%;
-            margin: 0 5% 0 0;
-            padding: 2% 0% 2% 3%;
+        img{
+            width: 60%;
+        }
+    }
+
+
+    /*Propiedades de botones para Asitencia*/
+    .cuadrobtn-invitados {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+        margin-top: 0.5em;
+
+        .formbtn {
+            color: var(--texto-btn);
+            padding: 0.2em 0.3em;
+            background-color: var(--cuadro-btn);
+            font-size: 0.9em;
+            font-weight: 700;
+            border-color: transparent;
+            border-radius: 0.5em;
+        }
+
+        .formbtn:hover {
+            background-color: var(--cuadro-hover);
+            cursor: pointer;
+            border-color: var(--texto-btn);
         }
     }
     
-    .alimentos{
-        margin: 2em 0;
-        padding: 0 10%;
+    .cuadrobtn-form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+        margin-top: 1.2em;
 
-        .form-alimentos {
-            width: 25%;
-            margin: 0 5% 0 0;
-            padding: 2% 60% 2% 3%;
+        .formbtn {
+            color: var(--texto-btn);
+            padding: 0.2em 0.3em;
+            margin-left: 0.7em;
+            background-color: var(--cuadro-btn);
+            font-size: 0.9em;
+            font-weight: 700;
+            border-color: transparent;
+            border-radius: 0.5em;
         }
-        .observ-alimentos{
-            width: 100%;
+
+        .formbtn:hover {
+            background-color: var(--cuadro-hover);
+            cursor: pointer;
+            border-color: var(--texto-btn);
         }
     }
-    .musica{
-        margin: 2em 0;
-        padding: 0 10%;
+}
 
-        .observ-musica{
-            width: 100%;
+
+/*PROPIEDADES SECCION MUSICA*/
+.contenido-musica {
+    display: flexbox;
+    width: 50%;
+    text-align: center;
+    margin: 4% 25% 5% 25%;
+
+    .cuadro-musica{
+        margin-top: 0.7em;
+        font-family: "Roboto", sans-serif;
+     
+        ::placeholder{
+            text-align: center;
+            margin-top: 0.5em;
+            color: var(--texto-formulario);
+        }
+        label{
+            width: 50%;
+            background-color: var(--form-cuadro);
+            color: var(--texto-formulario);
+            border-radius: 0.8em;
+            border-color: transparent;
+            margin: 0.7em;
+            padding: 0.3em 0.75em 0.3em 0.75em;
+            font-size: 1.2em;
+            font-weight: 400;     
+        }
+        textarea{
+            width: 40%;
+            background-color: var(--form-cuadro);
+            color: var(--texto-cargaInvitado);  
+            border-radius: 0.8em;
+            border-color: transparent;
+            margin-top: 0.5em;
+            padding: 0 0 0 0.75em;
+            align-content: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.95em;        
         }
     }
 
-    .textocentrado {
-        text-align: center;
-    }
-
-    .texto-small{
-        font-size: small;
-    }
-
-
-    /*PROPIEDADES DE BOTONES*/
-
-    .cuadrobtn {
+    /*Propiedades de botones para Cancion*/
+    .cuadrobtn-musica {
         width: 100%;
         margin: none;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin-top: 2em;
-    }
 
-    .formbtn {
-        margin: 0.25em 0.75em;
-        padding: 0 2em ;
-        background-color: var(--tercer-color);
-        font-size: medium;
-        font-weight: 600;
-        border-color: #aa1b1d;
-        border-radius: 0.5em;
-        height: 3.5em;
-    }
+        .musicabtn {
+            margin: 1em 0.3em;
+            color: var(--texto-btn);
+            padding: 0.2em 0.3em;
+            background-color: var(--cuadro-btn);
+            font-size: 0.9em;
+            font-weight: 700;
+            border-color: transparent;
+            border-radius: 0.5em;
+        }
 
-    .formbtn:hover {
-        background-color: rgb(158, 36, 52);
-        cursor: pointer;
-    }  
-
-    .menuprincipal{
-        width: 100%;
-        margin: 2em 0;
-        font-weight: 400;
-        color:#aa1b1d;
+        .musicabtn:hover {
+            background-color: var(--cuadro-hover);
+            cursor: pointer;
+            border-color: var(--texto-btn);
+        } 
     }
 }
