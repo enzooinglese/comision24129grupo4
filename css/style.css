@@ -78,6 +78,7 @@ body {
     margin: 0 auto;
     padding: 2% 0;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .numContador{
@@ -153,6 +154,35 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 35px;
+}
+/* Nuestra historia */
+
+.historia{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    text-align: center;
+    
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    & img{
+        width: 80%;
+        filter: drop-shadow( 5px 5px 10px #000 )
+    }
+}
+
+.fotonovios1{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.fotonovios2{
+    position: relative;
+    bottom: 10%;
+    right: 10%;
 }
 
 /* Lugar */
