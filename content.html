@@ -6,22 +6,34 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Invitacion</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     
     <header>
-        <nav>
-            <ul class="Navbar"> 
-                <img src="./img/amor.png" alt="" class="logo">
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#lugar">Lugar</a></li>
-                <li><a href="#regalos">Regalos</a></li>
-                <li><a href=#asistencia>Asistencia</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#galeria">Galería</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./img/amor.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto ">
+                    <li ><a href="#historia">Historia</a></li>
+                    <li ><a href="#lugar">Lugar</a></li>
+                    <li ><a href="#regalos">Regalos</a></li>
+                    <li ><a href="#asistencia">Asistencia</a></li>
+                    <li ><a href="#musica">Música</a></li>
+                    <li ><a href="#galeria">Galería</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
 
     <main>
         <section class="contenedorHistoria" id="historia">
@@ -77,11 +89,15 @@
                     <div>
                         <div>
                             <i class='bx bx-church bx-lg'></i>
-                            <p></i><b>Dirección:</b> Caseros 5000</p>
+
+                            <h4>Capilla San Benito</h4>
+                            <p></i><b>Dirección:</b> Caceros 5000</p>
+
                             <p><b>Horario:</b> 17:00hs</p>
                         </div>
                         <div>
                             <i class='bx bx-party bx-lg' ></i>
+                            <h4>Luna India</h4>
                             <p><b>Dirección:</b> Av. San Martín 5555</p>
                             <p><b>Horario:</b> 19:00</p>
                         </div>
@@ -108,7 +124,7 @@
                     <img src="img/Vector.png" alt="regalo">
                 </div>
                 <div>
-                    <p>El mejor regalo para nosotros es tu presencia, pero si querés podés colaborar enviándonos dinero (Alias:HOLA.CODO.NODE) o con alguno de los objetos de</p><a href="#">ESTA LISTA</a>
+                    <p>El mejor regalo para nosotros es tu presencia, pero si querés podés colaborar enviándonos dinero (Alias:HOLA.CODO.NODE) o con alguno de los objetos de</p><a href="https://docs.google.com/document/d/1IFSlQ_DWMUDhGRobmW2LrFGWnAUVCPpqCyAUR5JWdCY/edit?usp=sharing" target="_blank">ESTA LISTA</a>
                 </div>
 
             </div>
@@ -232,5 +248,6 @@
 
 
     <script src="./js/index.js"></script>
+    <script src="./js/navbar-scroll.js"></script>
 </body>
 </html>
