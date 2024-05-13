@@ -453,3 +453,120 @@ i{
         } 
     }
 }
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar li {
+    margin: 1px 20px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  .contenido-asistencia form {
+    margin: 0 auto; 
+    width: 80%; 
+  }
+
+  .form-img img {
+    width: 80%; 
+  }
+
+  .contador {
+    width: 60%; 
+  }
+
+  .numContador {
+    width: auto; 
+    font-size: 17px; 
+    margin: 0 3px; 
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 700px) {
+  body {
+    margin-right: 1rem; 
+    margin-left: 1rem;
+  }
+
+  .inicio {
+    margin: 0;
+  }
+
+  .contenedorClaro {
+    margin: 2rem; 
+  }
+
+  .nombres {
+    font-size: 60px;
+  }
+
+  .tituloInicio {
+    font-size: 60px; 
+  }
+
+  .fechaManual {
+    margin: 5px; 
+  }
+
+  #btnEntrar {
+    font-size: 100%; 
+    margin: 10px; 
+  }
+
+  .anillo {
+    margin: 5px; 
+    width: 30px; 
+  }
+
+  .contador {
+    width: 90%; 
+  }
+
+  .numContador {
+    width: 90%; 
+    font-size: 16px; 
+    margin: 5px; 
+  }
+p{
+  font-size: 0.8rem;
+}
+section h1{
+  font-size: 2rem;
+}
+#regalos div img{
+  width: 30%;
+}
+#asistencia .contenido-asistencia{
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+}
+#asistencia .contenido-asistencia .form-img{
+  display: none;
+}
+#musica .contenido-musica{
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  margin-right: rem;
+}
+#galeria .grid-container .grid-item{
+  display: flex; 
+    justify-content:center;
+    align-items:center; 
+    width: 100%;
+}
+#galeria .grid-container .grid-item img {
+  max-width: 60%;
+  height: auto;
+  
+}
+
+
+}
+
+ 
+
