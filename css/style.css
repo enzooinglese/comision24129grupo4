@@ -24,8 +24,8 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     background-size: cover;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
 }
 /* Pagina de incio con boton para entrar al resto de la pagina */
 .inicio{
@@ -233,7 +233,8 @@ i{
 }
 
 .mapa{
-    width: 100%;
+    width: 450px;
+    height: 300px;
     border: 0;
     box-shadow: 4px 6px 6px 1px rgba(184,184,184,1);
 }
@@ -478,6 +479,11 @@ i{
         padding-top: 100px;
     }
 
+    .mapa{
+        width: 300px;
+        height: 225px;
+    }
+
     .contenido-asistencia form {
         margin: 0 auto;
         width: 80%;
@@ -499,9 +505,10 @@ i{
 }
 /* Estilos para pantallas pequeñas */
 @media (max-width: 700px) {
+    
     body {
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
     }
 
     .inicio {
@@ -542,6 +549,19 @@ i{
         width: 90%;
         font-size: 16px;
         margin: 5px;
+    }
+
+    .contenido-lugar h4{
+        font-size: 16px;
+    }
+
+    .mapa{
+        width: 100px;
+        height: 150px;
+    }
+
+    .contenido-regalos p, a {
+        font-size: 12px;
     }
 
     p {
