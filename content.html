@@ -136,26 +136,31 @@
                 <form action="" id="formulario">
                     <div>
                         <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido" value="" name="nombre y apellido" id="nombre" aria-label="name">
+                        <div id="error1" class="cuadroerror"></div>
                     </div>
                     <div>
                         <div class="cuadro-form">
                             <label>¿Asistirás a la boda?</label>
                         </div>
                         <div class="opciones-form">
-                            <input type="radio" id="presente" name="input-radio" value="presente">
+                            <input type="radio" id="presente" name="confirmacionDeAsistencia" value="presente">
                             <label for="asistencia">Si, allí estaré</label>
                         </div>
                         <div class="opciones-form">
-                            <input type="radio" id="ausente" name="input-radio" value="ausente">
+                            <input type="radio" id="ausente" name="confirmacionDeAsistencia" value="ausente">
                             <label for="asistencia">No puedo ir</label>
                         </div>
+                        <div id="error2" class="cuadroerror"></div>
                     </div>
                     <div>
                         <input type="email" class="cuadro-form texto-form" placeholder="Mail: nombre@ejemplo.com" value="" name="mail" id="mail" aria-describedby="emailHelp">
+                        <div id="error3" class="cuadroerror"></div>
                     </div>
                     <div>
                         <div class="">
                             <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido del invitado" value="" name="invitado" id="invitado" aria-describedby="">
+                            <div id="error4" class="cuadroerror"></div>
+                            <div id="listaInvitados"></div>
                         </div>
                         <div class="cuadrobtn-invitados">
                             <button type="button" class="formbtn" id="btninvitados">Agregar Invitado</button>
@@ -176,8 +181,8 @@
                             </select>
                         </div>
                         <div>
-                            <label for="" class="item-der"></label>
-                            <textarea class="cuadro-otrotipo texto-form" id="prefAlim-cancion" placeholder="¿Otro tipo de pref.?"></textarea>
+                            <textarea class="cuadro-otrotipo texto-form" id="prefAlim" placeholder="¿Otro tipo de pref.?"></textarea>
+                            <div id="error5" class="cuadroerror"></div>
                         </div>
                     </div>
                     <div class="cuadrobtn-form">
@@ -188,7 +193,7 @@
                             <button type="button" class="formbtn" id="btnModificar">MODIFICAR</button>
                         </div>
                         <div>
-                            <button type="submit" class="formbtn" id="btnResumen">CONFIRMAR</button>
+                            <button type="submit" class="formbtn" id="btnConfirmar">CONFIRMAR</button>
                         </div>
                     </div>
                 </form>
@@ -207,15 +212,14 @@
                         <label for="">Completá debajo la canción a compartir</label>
                     </div>
                     <div class="cuadro-musica">
-                        <textarea id="prefAlim-cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
+                        <textarea id="cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
                     </div>
-            
                     <div class="cuadrobtn-musica">
                         <div>
                             <button type="reset" class="musicabtn" id="btnBorrar">ELIMINAR</button>
                         </div>
                         <div>
-                            <button type="submit" class="musicabtn" id="btnResumen">CONFIRMAR</button>
+                            <button type="submit" class="musicabtn" id="btnConfirmar">CONFIRMAR</button>
                         </div>
                     </div>
                 </form>
@@ -249,5 +253,6 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/navbar-scroll.js"></script>
+    <script src="./js/validForm.js"></script>
 </body>
 </html>
