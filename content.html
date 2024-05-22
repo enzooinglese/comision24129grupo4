@@ -136,7 +136,7 @@
                 <form action="" id="formulario">
                     <div>
                         <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido" value="" name="nombre y apellido" id="nombre" aria-label="name">
-                        <div id="error1" class="cuadroerror"></div>
+                        <div id="error1" class="cuadroerror1"></div>
                     </div>
                     <div>
                         <div class="cuadro-form">
@@ -150,17 +150,17 @@
                             <input type="radio" id="ausente" name="confirmacionDeAsistencia" value="ausente">
                             <label for="asistencia">No puedo ir</label>
                         </div>
-                        <div id="error2" class="cuadroerror"></div>
+                        <div id="error2" class="cuadroerror2"></div>
                     </div>
                     <div>
                         <input type="email" class="cuadro-form texto-form" placeholder="Mail: nombre@ejemplo.com" value="" name="mail" id="mail" aria-describedby="emailHelp">
-                        <div id="error3" class="cuadroerror"></div>
+                        <div id="error3" class="cuadroerror1"></div>
                     </div>
                     <div>
                         <div class="">
                             <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido del invitado" value="" name="invitado" id="invitado" aria-describedby="">
-                            <div id="error4" class="cuadroerror"></div>
-                            <div id="listaInvitados"></div>
+                            <div id="error4" class="cuadroerror1"></div>
+                            <div id="impListadoInvitados"></div>
                         </div>
                         <div class="cuadrobtn-invitados">
                             <button type="button" class="formbtn" id="btninvitados">Agregar Invitado</button>
@@ -171,7 +171,7 @@
                             <label for="asistencia">Preferencia alimentaria</label>
                         </div>
                         <div>
-                            <select class="opciones-form" name="alimentos" id="alimentos" aria-label="Default select example">
+                            <select class="opciones-form" name="alimentos" id="selecAlimentos" aria-label="Default select example">
                                 <option selected>-Seleccione-</option>
                                 <option value="0"><span class="texto.peso">0- No tengo</span></option>
                                 <option value="1">1- Vegana</option>
@@ -182,7 +182,7 @@
                         </div>
                         <div>
                             <textarea class="cuadro-otrotipo texto-form" id="prefAlim" placeholder="¿Otro tipo de pref.?"></textarea>
-                            <div id="error5" class="cuadroerror"></div>
+                            <div id="error5" class="cuadroerror2"></div>
                         </div>
                     </div>
                     <div class="cuadrobtn-form">
@@ -213,6 +213,7 @@
                     </div>
                     <div class="cuadro-musica">
                         <textarea id="cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
+                        <div id="error6" class="cuadroerror1"></div>
                     </div>
                     <div class="cuadrobtn-musica">
                         <div>

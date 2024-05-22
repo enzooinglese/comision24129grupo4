@@ -457,12 +457,20 @@ i{
 
 /*Estilo para mensajes de error en el formulario*/
 
-.cuadroerror {
+.cuadroerror1 {
     color: red;
     font-weight: 700;
     font-size: small;
     margin-left: 1em;
 }
+.cuadroerror2 {
+    color: red;
+    font-weight: 700;
+    font-size: small;
+    margin-left: 53%;
+}
+
+
 
 /* Estilos para pantallas medianas */
 @media (min-width: 768px) and (max-width: 1023px) {
