@@ -16,11 +16,13 @@
     --texto-btn: rgb(93, 93, 200);
     --cuadro-btn: rgb(190, 190, 190);
     --cuadro-hover: rgb(216, 210, 210);
+    --cuadro-invitados: rgb(240, 237, 237);
+    --select-acompanantes: rgb(196, 190, 190);
 }
 
 
 body {
-    background-image: url(../img/image2\ 1.png);
+    background-image: url(../img/image21.png);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     background-size: cover;
@@ -31,7 +33,7 @@ body {
 .inicio{
     position: absolute;
     inset: 0;
-    background-image: url(../img/image2\ 1.png);
+    background-image: url(../img/image21.png);
     height: 100vh;
     background-position: center;
     text-align: center;
@@ -187,7 +189,7 @@ h1{
     }
     & img{
         width: 80%;
-        filter: drop-shadow( 5px 5px 10px #000 )
+        filter: drop-shadow(5px 5px 10px #000);
     }
 }
 
@@ -271,16 +273,16 @@ i{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 10px;
-    padding: 1em;  
-         
-    form{
-        margin: 0 15%;
+    padding: 1em;
+
+    form {
+        margin: 0 12%;
         justify-content: center;
         align-items: center;
         padding: 5%;
-        font-family: "Roboto", sans-serif; 
+        font-family: "Roboto", sans-serif;
 
-        .cuadro-form{  
+        .cuadro-form {
             width: 100%;
             background-color: var(--form-cuadro);
             border-radius: 0.8em;
@@ -290,7 +292,8 @@ i{
             font-size: 1.2em;
             font-weight: 400;
         }
-        .opciones-form{
+
+        .opciones-form {
             width: 50%;
             margin-top: 0.5em;
             margin-left: 50%;
@@ -298,69 +301,74 @@ i{
             border-radius: 0.8em;
             border-color: transparent;
             padding: 0 0 0 0.75em;
-            }
-        .texto-form{
+            font-size: 1em;
+        }
+
+        .texto-form {
             color: var(--texto-cargaInvitado);
             font-family: "Roboto", sans-serif;
         }
-        ::placeholder, label{
+
+        ::placeholder,
+        label {
             color: var(--texto-formulario);
-            }
-        select, option{
-            color: var(--texto-formulario);
-            font-size: 1em 
         }
-        textarea{
-            width:50%;
-            height: 1.5em;
-            margin-left: 50%;
+
+        select, option {
+            color: var(--texto-formulario);
+            font-size: 1em
+        }
+
+        .btnAcompanantes{
+            width: 98%;
+            color: var(--texto-formulario);
             background-color: var(--form-cuadro);
-            border-radius: 0.8em;
+            border: transparent;
             border-color: transparent;
+            text-align: left;
+        }
+        .acompanantes{
+            display: none;
             margin-top: 0.5em;
-            padding: 0 0 0 0.75em;
-            align-content: center;
+
+            .acompanante{
+                display: flex;
+                margin: 0.5em 0;
+                
+                input{
+                    width:100%;
+                    border-radius: 0.2em;
+                    border: none;
+                    font-size: 0.9em;
+                }
+                select{
+                    width:70%;
+                    margin: 0 0.6em;
+                    font-size: 0.8em;
+                    border-color: var(--select-acompanantes);
+                }
+            }      
+        }
+        .btnCerrarListado{
+            color: var(--texto-cargaInvitado);
             font-family: "Roboto", sans-serif;
-            font-size: 0.95em;   
+            font-size: 0.8em;
+            margin-left: 40%;
+        }
+
+        .form-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+            }
         }
     }
-
-    .form-img{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        
-        img{
-            width: 60%;
-        }
-    }
-
 
     /*Propiedades de botones para Asitencia*/
-    .cuadrobtn-invitados {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: right;
-        margin-top: 0.5em;
-
-        .formbtn {
-            color: var(--texto-btn);
-            padding: 0.2em 0.3em;
-            background-color: var(--cuadro-btn);
-            font-size: 0.9em;
-            font-weight: 700;
-            border-color: transparent;
-            border-radius: 0.5em;
-        }
-
-        .formbtn:hover {
-            background-color: var(--cuadro-hover);
-            cursor: pointer;
-            border-color: var(--texto-btn);
-        }
-    }
-    
     .cuadrobtn-form {
         display: flex;
         flex-flow: row wrap;
@@ -386,90 +394,22 @@ i{
     }
 }
 
-
-/*PROPIEDADES SECCION MUSICA*/
-.contenido-musica {
-    display: flexbox;
-    width: 50%;
-    text-align: center;
-    margin: 4% 25% 5% 25%;
-
-    .cuadro-musica{
-        margin-top: 0.7em;
-        font-family: "Roboto", sans-serif;
-     
-        ::placeholder{
-            text-align: center;
-            margin-top: 0.5em;
-            color: var(--texto-formulario);
-        }
-        label{
-            width: 50%;
-            background-color: var(--form-cuadro);
-            color: var(--texto-formulario);
-            border-radius: 0.8em;
-            border-color: transparent;
-            margin: 0.7em;
-            padding: 0.3em 0.75em 0.3em 0.75em;
-            font-size: 1.2em;
-            font-weight: 400;     
-        }
-        textarea{
-            width: 40%;
-            background-color: var(--form-cuadro);
-            color: var(--texto-cargaInvitado);  
-            border-radius: 0.8em;
-            border-color: transparent;
-            margin-top: 0.5em;
-            padding: 0 0 0 0.75em;
-            align-content: center;
-            font-family: "Roboto", sans-serif;
-            font-size: 0.95em;        
-        }
+    /*Estilo para mensajes de error en el formulario*/
+    .cuadroerror1 {
+        color: red;
+        font-weight: 700;
+        font-size: small;
+        margin-left: 1em;
     }
-
-    /*Propiedades de botones para Cancion*/
-    .cuadrobtn-musica {
-        width: 100%;
-        margin: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-
-        .musicabtn {
-            margin: 1em 0.3em;
-            color: var(--texto-btn);
-            padding: 0.2em 0.3em;
-            background-color: var(--cuadro-btn);
-            font-size: 0.9em;
-            font-weight: 700;
-            border-color: transparent;
-            border-radius: 0.5em;
-        }
-
-        .musicabtn:hover {
-            background-color: var(--cuadro-hover);
-            cursor: pointer;
-            border-color: var(--texto-btn);
-        } 
+    .cuadroerror2 {
+        color: red;
+        font-weight: 700;
+        font-size: small;
+        margin-left: 53%;
     }
-}
-
-/*Estilo para mensajes de error en el formulario*/
-
-.cuadroerror1 {
-    color: red;
-    font-weight: 700;
-    font-size: small;
-    margin-left: 1em;
-}
-.cuadroerror2 {
-    color: red;
-    font-weight: 700;
-    font-size: small;
-    margin-left: 53%;
-}
-
+    .cuadroerror3 {
+        border: red;
+    }
 
 
 /* Estilos para pantallas medianas */
@@ -593,7 +533,7 @@ i{
         font-size: 0.8rem;
         display: flex;
         justify-content: center;
-        margin-right: rem;
+        margin-right: rem;        /* ver */
     }
 
     #galeria .grid-container .grid-item {

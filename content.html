@@ -8,8 +8,7 @@
     <title>Invitacion</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -34,7 +33,6 @@
         </nav>
     </header>
 
-
     <main>
         <section class="contenedorHistoria" id="historia">
             <div class="contador" id="clock">
@@ -58,7 +56,7 @@
             <h1>Nuestra Historia</h1>
             <div class="historia">
                 <div class="fotohistoria1">
-                    <img class="fotonovios1" src="./img/people-2594745_1280.png" alt="beso novios">
+                    <img class="fotonovios1" src="./img/people-2594745_1280.png" alt="besonovios">
                 </div>
                     <div class="textFotoNovios1">
                         <p>
@@ -71,19 +69,16 @@
                         </p>
                     </div>
                 <div class="fotohistoria2">
-                        <img class="fotonovios2" src="./img/IMG_4618.png" alt="abrazo novios">
-                </div>
-                    
-                
-            </div>
-            
+                        <img class="fotonovios2" src="./img/IMG_4618.png" alt="abrazonovios">
+                </div>      
+            </div>        
         </section>
 
         <section id="lugar">
             <h1>Lugar</h1>
                 <div class="contenido contenido-lugar">
                     <div>
-                        <img src="img/image0.png" alt="foto del lugar de la fiesta">
+                        <img src="img/image0.png" alt="fotodellugardelafiesta">
                     </div>
     
                     <div>
@@ -100,8 +95,7 @@
                             <h4>Luna India</h4>
                             <p><b>Dirección:</b> Av. San Martín 5555</p>
                             <p><b>Horario:</b> 19:00</p>
-                        </div>
-                        
+                        </div>     
                     </div>
     
                     <div>
@@ -112,8 +106,6 @@
                         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.25572207307!2d-68.90756489731325!3d-32.952448504944165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e72b85971342b%3A0xbbbd1aeba7b67a88!2sLuna%20India!5e0!3m2!1ses-419!2sar!4v1712935383788!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
-                    
-
                 </div>            
         </section>
 
@@ -126,16 +118,15 @@
                 <div>
                     <p>El mejor regalo para nosotros es tu presencia, pero si querés podés colaborar enviándonos dinero (Alias:HOLA.CODO.NODE) o con alguno de los objetos de</p><a href="https://docs.google.com/document/d/1IFSlQ_DWMUDhGRobmW2LrFGWnAUVCPpqCyAUR5JWdCY/edit?usp=sharing" target="_blank">ESTA LISTA</a>
                 </div>
-
             </div>
         </section>
 
         <section id="asistencia">
             <h1>Asistencia</h1>
             <div class="contenido-asistencia">   
-                <form action="" id="formulario">
+                <form id="formulario">
                     <div>
-                        <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido" value="" name="nombre y apellido" id="nombre" aria-label="name">
+                        <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido" value="" name="nombre y apellido" id="nombre">
                         <div id="error1" class="cuadroerror1"></div>
                     </div>
                     <div>
@@ -144,86 +135,122 @@
                         </div>
                         <div class="opciones-form">
                             <input type="radio" id="presente" name="confirmacionDeAsistencia" value="presente">
-                            <label for="asistencia">Si, allí estaré</label>
+                            <label>Si, allí estaré</label>
                         </div>
                         <div class="opciones-form">
                             <input type="radio" id="ausente" name="confirmacionDeAsistencia" value="ausente">
-                            <label for="asistencia">No puedo ir</label>
+                            <label>No puedo ir</label>
                         </div>
                         <div id="error2" class="cuadroerror2"></div>
                     </div>
                     <div>
-                        <input type="email" class="cuadro-form texto-form" placeholder="Mail: nombre@ejemplo.com" value="" name="mail" id="mail" aria-describedby="emailHelp">
+                        <input type="email" class="cuadro-form texto-form" placeholder="Mail: nombre@ejemplo.com" value="" name="mail" id="mail">
                         <div id="error3" class="cuadroerror1"></div>
                     </div>
                     <div>
-                        <div class="">
-                            <input type="text" class="cuadro-form texto-form" placeholder="Nombre y apellido del invitado" value="" name="invitado" id="invitado" aria-describedby="">
-                            <div id="error4" class="cuadroerror1"></div>
-                            <div id="impListadoInvitados"></div>
-                        </div>
-                        <div class="cuadrobtn-invitados">
-                            <button type="button" class="formbtn" id="btninvitados">Agregar Invitado</button>
-                        </div>
-                    </div>  
-                    <div>
                         <div class="cuadro-form">
-                            <label for="asistencia">Preferencia alimentaria</label>
+                            <label>Preferencia alimentaria</label>
                         </div>
                         <div>
-                            <select class="opciones-form" name="alimentos" id="selecAlimentos" aria-label="Default select example">
+                            <select class="opciones-form" name="alimentos" id="selecAlimentos0">
                                 <option selected>-Seleccione-</option>
-                                <option value="0"><span class="texto.peso">0- No tengo</span></option>
+                                <option value="0">0- No tengo</option>
                                 <option value="1">1- Vegana</option>
                                 <option value="2">2- Vegetariana</option>
-                                <option value="3">4- Sin lácteos</option>
-                                <option value="4">5- Sin TACC</option>
+                                <option value="3">3- Sin lácteos</option>
+                                <option value="4">4- Sin TACC</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="cuadro-form">
                         <div>
-                            <textarea class="cuadro-otrotipo texto-form" id="prefAlim" placeholder="¿Otro tipo de pref.?"></textarea>
-                            <div id="error5" class="cuadroerror2"></div>
+                            <button type="button" onclick="mostrarListado()" class="btnAcompanantes">Acompañantes del invitado</button> 
                         </div>
+                        <div class="acompanantes" id="acompanantes">
+                            <div class="acompanante">
+                                <input type="text" placeholder="Nombre y apellido" value="" name="invitado1" id="acompanante1">
+                                <select class="opciones-form" name="alimentos" id="selecAlimentos1">
+                                    <option selected>-Seleccione-</option>
+                                    <option value="0">0- No tengo</option>
+                                    <option value="1">1- Vegana</option>
+                                    <option value="2">2- Vegetariana</option>
+                                    <option value="3">3- Sin lácteos</option>
+                                    <option value="4">4- Sin TACC</option>
+                                </select>
+                            </div>
+                                <div id="error4" class="cuadroerror1"></div>
+                            <div class="acompanante">
+                                <input type="text" placeholder="Nombre y apellido" value="" name="invitado2" id="acompanante2">
+                                <select class="opciones-form" name="alimentos" id="selecAlimentos2">
+                                    <option selected>-Seleccione-</option>
+                                    <option value="0">0- No tengo</option>
+                                    <option value="1">1- Vegana</option>
+                                    <option value="2">2- Vegetariana</option>
+                                    <option value="3">3- Sin lácteos</option>
+                                    <option value="4">4- Sin TACC</option>
+                                </select>
+                            </div>    
+                                <div id="error5" class="cuadroerror1"></div>
+                            <div class="acompanante">
+                                <input type="text" placeholder="Nombre y apellido" value="" name="invitado3" id="acompanante3">
+                                <select class="opciones-form" name="alimentos" id="selecAlimentos3">
+                                    <option selected>-Seleccione-</option>
+                                    <option value="0">0- No tengo</option>
+                                    <option value="1">1- Vegana</option>
+                                    <option value="2">2- Vegetariana</option>
+                                    <option value="3">3- Sin lácteos</option>
+                                    <option value="4">4- Sin TACC</option>
+                                </select>
+                            </div>    
+                                <div id="error6" class="cuadroerror1"></div>
+                            <div class="acompanante">
+                                <input type="text" placeholder="Nombre y apellido" value="" name="invitado4" id="acompanante4">
+                                <select class="opciones-form" name="alimentos" id="selecAlimentos4">
+                                    <option selected>-Seleccione-</option>
+                                    <option value="0">0- No tengo</option>
+                                    <option value="1">1- Vegana</option>
+                                    <option value="2">2- Vegetariana</option>
+                                    <option value="3">3- Sin lácteos</option>
+                                    <option value="4">4- Sin TACC</option>
+                                </select>
+                            </div>   
+                                <div id="error7" class="cuadroerror1"></div>
+                            <div class="acompanante">
+                                <input type="text" placeholder="Nombre y apellido" value="" name="invitado5" id="acompanante5">
+                                <select class="opciones-form" name="alimentos" id="selecAlimentos5">
+                                    <option selected>-Seleccione-</option>
+                                    <option value="0">0- No tengo</option>
+                                    <option value="1">1- Vegana</option>
+                                    <option value="2">2- Vegetariana</option>
+                                    <option value="3">3- Sin lácteos</option>
+                                    <option value="4">4- Sin TACC</option>
+                                </select>
+                            </div>   
+                                <div id="error8" class="cuadroerror1"></div>
+                            <a href="javascript:void(0);" onclick="ocultarListado()" class="btnCerrarListado">Cerrar Listado</a> 
+                        </div>
+                    </div>    
+                    <div>
+                        <div class="cuadro-form">
+                            <label>¿Qué canción te gustaría escuchar?</label>
+                        </div>
+                        <div>
+                            <input type="text" class="cuadro-form opciones-form" placeholder="tu canción: . . . . . . . ." value="" name="cancion" id="cancion">
+                        </div>
+                        <div id="error9" class="cuadroerror2"></div>
                     </div>
                     <div class="cuadrobtn-form">
                         <div>
                             <button type="reset" class="formbtn" id="btnBorrar">ELIMINAR</button>
                         </div>
                         <div>
-                            <button type="button" class="formbtn" id="btnModificar">MODIFICAR</button>
-                        </div>
-                        <div>
                             <button type="submit" class="formbtn" id="btnConfirmar">CONFIRMAR</button>
                         </div>
                     </div>
                 </form>
-            
                 <div class="form-img">
-                    <img src="img/nos casamos.png" alt="formulario">
+                    <img src="img/noscasamos.png" alt="formulario">
                 </div>
-            </div>
-        </section>
-
-        <section id="musica">
-            <h1>¿Qué canción te gustaría escuchar?</h1>
-            <div class="contenido-musica">
-                <form action="" id="formulario">
-                    <div class="cuadro-musica">
-                        <label for="">Completá debajo la canción a compartir</label>
-                    </div>
-                    <div class="cuadro-musica">
-                        <textarea id="cancion" placeholder="tu canción: . . . . . . . . . .  . . . . . . . . ."></textarea>
-                        <div id="error6" class="cuadroerror1"></div>
-                    </div>
-                    <div class="cuadrobtn-musica">
-                        <div>
-                            <button type="reset" class="musicabtn" id="btnBorrar">ELIMINAR</button>
-                        </div>
-                        <div>
-                            <button type="submit" class="musicabtn" id="btnConfirmar">CONFIRMAR</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </section>
 
