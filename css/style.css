@@ -355,18 +355,18 @@ i{
             font-size: 0.8em;
             margin-left: 40%;
         }
+    }
+    .form-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .form-img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 60%;
-            }
+        img {
+            width: 60%;
         }
     }
+    
 
     /*Propiedades de botones para Asitencia*/
     .cuadrobtn-form {
