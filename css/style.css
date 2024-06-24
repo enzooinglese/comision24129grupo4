@@ -318,43 +318,6 @@ i{
             color: var(--texto-formulario);
             font-size: 1em
         }
-
-        .btnAcompanantes{
-            width: 98%;
-            color: var(--texto-formulario);
-            background-color: var(--form-cuadro);
-            border: transparent;
-            border-color: transparent;
-            text-align: left;
-        }
-        .acompanantes{
-            display: none;
-            margin-top: 0.5em;
-
-            .acompanante{
-                display: flex;
-                margin: 0.5em 0;
-                
-                input{
-                    width:100%;
-                    border-radius: 0.2em;
-                    border: none;
-                    font-size: 0.9em;
-                }
-                select{
-                    width:70%;
-                    margin: 0 0.6em;
-                    font-size: 0.8em;
-                    border-color: var(--select-acompanantes);
-                }
-            }      
-        }
-        .btnCerrarListado{
-            color: var(--texto-cargaInvitado);
-            font-family: "Roboto", sans-serif;
-            font-size: 0.8em;
-            margin-left: 40%;
-        }
     }
     .form-img {
         display: flex;
